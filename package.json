@@ -11,16 +11,12 @@
     "babel plugin reading time"
   ],
   "main": "dist/main/index.js",
-  "module": "dist/module/index.js",
-  "unpkg": "dist/umd/babel-plugin-reading-time.js",
   "source": "src/index.ts",
   "types": "types/index.d.ts",
   "exports": {
     ".": {
-      "browser": "./dist/module/index.js",
       "import": "./dist/esm/index.mjs",
       "require": "./dist/main/index.js",
-      "umd": "./dist/umd/babel-plugin-reading-time.js",
       "source": "./src/index.ts",
       "types": "./types/index.d.ts",
       "default": "./dist/main/index.js"
@@ -109,6 +105,14 @@
     "singleQuote": true,
     "bracketSpacing": false
   },
+  "proser": {
+    "index": "test/__fixtures__/posts/index.js",
+    "babel": {
+      "plugins": [
+        "./dist/main/index.js"
+      ]
+    }
+  },
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
@@ -123,9 +127,14 @@
     "lint-staged": "latest",
     "lundle": "latest",
     "prettier": "latest",
+    "proser": "^0.1.14",
     "standard-version": "latest",
     "typescript": "latest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/babel-types": "^7.0.8",
+    "babel-types": "^6.26.0",
+    "reading-time": "^1.2.0"
+  },
   "peerDependencies": {}
 }
