@@ -1,6 +1,6 @@
 {
   "name": "@proser/babel-plugin-reading-time",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/proser-js/babel-plugin-reading-time#readme",
   "repository": "github:proser-js/babel-plugin-reading-time",
   "bugs": "https://github.com/proser-js/babel-plugin-reading-time/issues",
